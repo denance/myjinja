@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>
+        Elements Portal Development Dashboard
+    </title>
+</head>
+<body>
+<h3>
+    Elements Portal Development Dashboard
+</h3>
+<br>
+<table border="1" cellpadding="4">
+    <tr>
+        <td>
+            <a href="{{ portal_url }}">Latest stable application link</a>
+        </td>
+        <td>
+            <a href="{{ jenkins_build_status }}">Latest build status</a>
+        </td>
+        <td>
+            <a href="{{ github_url }}">GitHub repository</a>
+        </td>
+        <td>
+            <a href="{{ git_commit_url}}">Latest commit</a>
+        </td>
+        Last commit
+        </b>
+        </td>
+        <td>
+            <a href="{{ git_commit_url}}">{{ git_commit }}</a>
+        </td>
+    </tr>
+</table>
+<br>
+<H3>Elements Portal Functional Test Report</H3>
+<a href='#test_environment'>Test Environment</a><br>
+<a href='#test_data'>Test Data</a>
+<H3>All Tests</H3>
+{{ test_report }}
+</body>
+</html>
